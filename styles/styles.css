@@ -1,41 +1,50 @@
 .GridContainer {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    grid-template-rows: 100px 700px 200px 200px 200px 200px;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 50px 50px 700px 200px 200px 200px 100px;
+    grid-template-areas: 
+        "header header header header  header"
+        "lside menu menu menu rside"
+        "lside main1 main2 main3 rside"
+        "lside main1 main2 main3 rside"
+        "lside main1 main2 main3 rside"
+        "lside main1 main2 main3 rside"
+        "lside main1 main2 main3 rside";
 }
 .GridItemA{
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    background-color:dimgray
+    grid-area: header;
+    padding-top: 10px;
+    background-color:dimgray;
 }
 .GridItemB{
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-area: main1;
     background-color:dimgray;
 }
 .GridItemC{
-    grid-column-start: 4;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-area: main2;
     background-color:dimgray;
 }
 .GridItemD{
-    grid-column-start: 5;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-area: main3;
     background-color:dimgray;
 }
 .GridItemE{
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
+    grid-area: main4;
     background-color:dimgray;
+}
+.GridItemF{
+    grid-area: lside;
+    background-color: white;
+}
+.GridItemG{
+    grid-area: rside;
+    background-color: white;
+}
+.GridItemH{
+    grid-area: menu;
+    background-color: green;
+    display: flex;
+}
+.FlexItem{
     
 }
