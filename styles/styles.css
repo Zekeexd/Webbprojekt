@@ -1,0 +1,41 @@
+.GridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: 100px 700px 200px 200px 200px 200px;
+}
+.GridItemA{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color:dimgray
+}
+.GridItemB{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color:dimgray;
+}
+.GridItemC{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color:dimgray;
+}
+.GridItemD{
+    grid-column-start: 5;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color:dimgray;
+}
+.GridItemE{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color:dimgray;
+    
+}
