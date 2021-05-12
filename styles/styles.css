@@ -4,12 +4,20 @@
     grid-template-rows: 50px 50px 700px 200px 200px 200px 100px;
     grid-template-areas: 
         "header header header header  header"
-        "lside menu menu menu rside"
+        "lside menu1 menu1 menu1 rside"
         "lside main1 main2 main3 rside"
         "lside main1 main2 main3 rside"
         "lside main1 main2 main3 rside"
         "lside main1 main2 main3 rside"
         "lside main1 main2 main3 rside";
+}
+.GridContainer2 {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: 40px 1000px;
+    grid-template-areas: 
+        "lside header rside"
+        "lside main1 rside";
 }
 .GridItemA{
     grid-area: header;
@@ -41,7 +49,7 @@
     background-color: white;
 }
 .GridItemH{
-    grid-area: menu;
+    grid-area: menu1;
     background-color: green;
     display: flex;
 }
