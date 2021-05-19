@@ -1,6 +1,9 @@
+body{
+    background-color: black;
+}
 .GridContainer {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 50px 50px 700px 200px 200px 200px 100px;
     grid-template-areas: 
         "header header header header  header"
@@ -23,6 +26,7 @@
     grid-area: header;
     padding-top: 10px;
     background-color:dimgray;
+
 }
 .GridItemB{
     grid-area: main1;
@@ -40,18 +44,41 @@
     grid-area: main4;
     background-color:dimgray;
 }
-.GridItemF{
-    grid-area: lside;
-    background-color: white;
-}
-.GridItemG{
-    grid-area: rside;
-    background-color: white;
-}
 .GridItemH{
     grid-area: menu1;
-    background-color: green;
+    background-color: dimgray;
     display: flex;
+}
+.CenterGridA {
+    text-align: center;
+    font-size: 2em;
+    font-family: cursive;
+}
+.CenterGridBCD {
+    text-align: center;
+    font-size: 1.5em;
+}
+.Text1{
+    font-size: 0.7em;
+}
+.Text2{
+    font-size: 1em;
+    color:red;
+}
+}
+.VideoAlign{
+    padding-top: 2rem;
+    width: 300px;
+    height: 169px;
+    border: 0;
+}
+.Linkthing{
+    color:black;
+}
+.Index4Img{
+    padding-top: 2rem;
+    width: 300px;
+    height: 800px;
 }
 .FlexItem{
     
