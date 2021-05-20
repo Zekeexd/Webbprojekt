@@ -16,7 +16,7 @@ body{
 }
 .GridContainer2 {
     display: grid;
-    grid-template-columns: 20% auto 20%;
+    grid-template-columns: auto 50% auto;
     grid-template-rows: 40px 1000px;
     grid-template-areas: 
         "lside header rside"
@@ -64,6 +64,10 @@ body{
 .Text2{
     font-size: 1em;
     color:red;
+}
+.Text3{
+    font-size: 1em;
+    color: white;
 }
 }
 .VideoAlign{
