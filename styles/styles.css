@@ -58,6 +58,9 @@ body{
     text-align: center;
     font-size: 1.5em;
 }
+.MoveText{
+    margin-left: 105%;
+}
 .Text1{
     font-size: 0.7em;
 }
@@ -68,7 +71,6 @@ body{
 .Text3{
     font-size: 1em;
     color: white;
-}
 }
 .VideoAlign{
     padding-top: 2rem;
