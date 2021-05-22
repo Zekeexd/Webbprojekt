@@ -72,10 +72,22 @@ body{
     font-size: 1em;
     color: white;
 }
+.TextPadding{
+    padding-left: 10%;
+}
+.TextH2{
+    color: white;
+}
 .VideoAlign{
     padding-top: 2rem;
     width: 300px;
     height: 169px;
+    border: 0;
+}
+.PictureAlign{
+    padding-left: 180px;
+    width: 600px;
+    height: 338px;
     border: 0;
 }
 .Linkthing{
