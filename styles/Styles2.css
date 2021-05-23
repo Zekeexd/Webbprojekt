@@ -4,6 +4,20 @@
     color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+@media all and (max-width: 600px) {
+    .TextFlashbang{
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+}
     .Index4body{
     background-image: url(../bilder/flashbang.png);
+}
+@media all and (max-width: 600px) {
+    .Index4body{
+    background-image: url(../bilder/flashbang.png);
+    width: 100px;
+    height: 100px;
 }
