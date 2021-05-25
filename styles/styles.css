@@ -17,11 +17,28 @@ body{
 }
 .GridContainer2 {
     display: grid;
+    width: 100%;
     grid-template-columns: auto 50% auto;
     grid-template-rows: 40px 1000px;
     grid-template-areas: 
         "lside header rside"
         "lside main1 rside";
+}
+@media all and (max-width: 1000px) {
+.GridContainer {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50px 50px 50px 50px 200px 200px 200px;
+    grid-template-areas: 
+        "header header header header  header"
+        "lside space space space rside"
+        "lside menu1 menu1 menu1 rside"
+        "lside menu1 menu1 menu1 rside"
+        "lside main1 main2 main3 rside"
+        "lside main1 main2 main3 rside"
+        "lside main1 main2 main3 rside"
+        "lside main1 main2 main3 rside";
+}
 }
 .GridItemA{
     grid-area: header;
@@ -52,6 +69,17 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-flow: nowrap;
+}
+@media all and (max-width: 1000px) {
+    .GridMenu{
+    grid-area: menu1;
+    background-color: dimgray;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 }
 .CenterGridA {
     text-align: center;
@@ -86,6 +114,11 @@ body{
 .TextH2{
     color: white;
 }
+.LinkSize{
+    width: 12em;
+    text-align: center;
+    display: block;
+}
 .VideoAlign{
     padding-top: 1rem;
     width: 19vw;
@@ -93,19 +126,33 @@ body{
     border: 0;
 }
 .PictureAlign{
-    padding-left: 130px;
-    width: 600px;
-    height: 338px;
+    padding-left: 70px;
+    height: auto;
+    border: 0;
+    max-width: 700px;
+}
+@media all and (max-width: 1000px)
+.PictureAlign{
+    padding-left: 7px;
+    width: 10vw;
+    height: 20vw;
     border: 0;
 }
 .Index4Img{
     padding-top: 2rem;
-    width: 300px;
+    width: 30px;
     height: 800px;
+}
+
+@media all and (max-width: 1000px) {
+.Index4Img{
+    padding-top: 2rem;
+    width: 15vh;
+    height: 80vh;
 }
 a{
     color:black;
-    text-decoration: none
+    text-decoration: none;
     
 }
 a:hover{
