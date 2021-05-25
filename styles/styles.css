@@ -4,9 +4,10 @@ body{
 .GridContainer {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 50px 50px 700px 200px 200px 200px 100px;
+    grid-template-rows: 50px 50px 50px 700px 200px 200px 200px;
     grid-template-areas: 
         "header header header header  header"
+        "lside space space space rside"
         "lside menu1 menu1 menu1 rside"
         "lside main1 main2 main3 rside"
         "lside main1 main2 main3 rside"
@@ -44,10 +45,13 @@ body{
     grid-area: main4;
     background-color:dimgray;
 }
-.GridItemH{
+.GridMenu{
     grid-area: menu1;
     background-color: dimgray;
+    font-size: 1.5em;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .CenterGridA {
     text-align: center;
@@ -57,6 +61,10 @@ body{
 .CenterGridBCD {
     text-align: center;
     font-size: 1.5em;
+}
+.GridSpace{
+    grid-area: space;
+    background-color: dimgray;
 }
 .MoveText{
     margin-left: 105%;
@@ -79,9 +87,9 @@ body{
     color: white;
 }
 .VideoAlign{
-    padding-top: 2rem;
-    width: 300px;
-    height: 169px;
+    padding-top: 1rem;
+    width: 19vw;
+    height: 10vw;
     border: 0;
 }
 .PictureAlign{
@@ -90,14 +98,16 @@ body{
     height: 338px;
     border: 0;
 }
-.Linkthing{
-    color:black;
-}
 .Index4Img{
     padding-top: 2rem;
     width: 300px;
     height: 800px;
 }
-.FlexItem{
+a{
+    color:black;
+    text-decoration: none
     
+}
+a:hover{
+    color: orange;
 }
