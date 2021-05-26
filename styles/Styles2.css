@@ -4,7 +4,7 @@
     color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 1000px) {
     .TextFlashbang{
     font-size: 4em;
     text-align: center;
@@ -17,7 +17,7 @@
     background-size: 50% auto;
     height: 100vh;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 1000px) {
     .Index4body{
     background-image: url(../bilder/flashbang.png);
     background-repeat: no-repeat;

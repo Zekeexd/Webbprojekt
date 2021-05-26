@@ -103,9 +103,23 @@ body{
     font-size: 1em;
     color:red;
 }
+.TextH2{
+    font-size: 1.5em;
+}
+@media all and (max-width: 1000px){
+.TextH2{
+    font-size: 2em;
+}
+}
 .Text3{
     font-size: 1em;
     color: white;
+}
+@media all and (max-width: 1000px){
+.Text3{
+    font-size: 1.5em;
+    color: white;
+}
 }
 .CenterText{
     text-align: center;
@@ -120,6 +134,15 @@ body{
 .LinkSize{
     font-size: 1em;
     text-align: left;
+}
+.LinkSize2{
+    font-size: 1em;
+}
+@media all and (max-width: 1000px){
+.LinkSize{
+    font-size: 1.5em;
+    text-align: left;
+}
 }
 .VideoAlign{
     padding-top: 1rem;
