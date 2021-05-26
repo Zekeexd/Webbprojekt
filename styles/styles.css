@@ -19,9 +19,10 @@ body{
     display: grid;
     width: 100%;
     grid-template-columns: auto 50% auto;
-    grid-template-rows: 40px 1000px;
+    grid-template-rows: 11% auto auto;
     grid-template-areas: 
         "lside header rside"
+        "lside space rside"
         "lside main1 rside";
 }
 @media all and (max-width: 1000px) {
@@ -44,13 +45,12 @@ body{
     grid-area: header;
     padding-top: 10px;
     background-color:dimgray;
-
 }
 .GridItemB{
     grid-area: main1;
-    background-color:dimgray;
     width: 100%;
     text-align: center;
+    background-color:dimgray;
 }
 .GridItemC{
     grid-area: main2;
@@ -96,9 +96,6 @@ body{
     grid-area: space;
     background-color: dimgray;
 }
-.MoveText{
-    margin-left: 100%;
-}
 .Text1{
     font-size: 0.7em;
 }
@@ -110,16 +107,19 @@ body{
     font-size: 1em;
     color: white;
 }
-.TextPadding{
-    padding-left: 10%;
+.CenterText{
+    text-align: center;
 }
-.TextH2{
-    color: white;
+.Flexer{
+    display: flex;
+    flex-direction: row;
+}
+.flexItem{
+    flex-grow: 1;
 }
 .LinkSize{
-    width: 12em;
-    text-align: center;
-    display: block;
+    font-size: 1em;
+    text-align: left;
 }
 .VideoAlign{
     padding-top: 1rem;
