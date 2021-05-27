@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    background-image: url(../bilder/PictureofmycharacterDruidCropped3.jpg)
 }
 .GridContainer {
     display: grid;
@@ -15,6 +16,19 @@ body{
         "lside main1 main2 main3 rside"
         "lside main1 main2 main3 rside";
 }
+@media all and (max-width: 1000px){
+.GridContainer {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 70px 0px 115px 610px;
+    grid-template-areas: 
+        "header header header header"
+        "lside space space rside"
+        "lside menu1 menu1 rside"
+        "lside main1 main2 rside"
+        "lside main1 main2 rside";
+}
+}
 .GridContainer2 {
     display: grid;
     width: 100%;
@@ -24,22 +38,6 @@ body{
         "lside header rside"
         "lside space rside"
         "lside main1 rside";
-}
-@media all and (max-width: 1000px) {
-.GridContainer {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 50px 50px 50px 50px 200px 200px 200px;
-    grid-template-areas: 
-        "header header header header  header"
-        "lside space space space rside"
-        "lside menu1 menu1 menu1 rside"
-        "lside menu1 menu1 menu1 rside"
-        "lside main1 main2 main3 rside"
-        "lside main1 main2 main3 rside"
-        "lside main1 main2 main3 rside"
-        "lside main1 main2 main3 rside";
-}
 }
 .GridItemA{
     grid-area: header;
@@ -111,6 +109,13 @@ body{
     font-size: 2em;
 }
 }
+@media all and (max-width: 1000px){
+    body{
+    background-image: url(../bilder/STOP.png);
+    background-size: 50% auto;
+    height: 100vh;
+    }
+}
 .Text3{
     font-size: 1em;
     color: white;
@@ -149,6 +154,14 @@ body{
     width: 19vw;
     height: 10vw;
     border: 0;
+}
+@media all and (max-width: 1000px){
+.VideoAlign{
+    padding-top: 0.5rem;
+    width: 23vw;
+    height: 15vw;
+    border: 0;
+}
 }
 .PictureAlignB{
     height: auto;
