@@ -5,7 +5,7 @@ body{
 .GridContainer {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 50px 50px 50px 700px 200px 200px 200px;
+    grid-template-rows: 50px 20px 100px 700px 200px 200px 200px;
     grid-template-areas: 
         "header header header header  header"
         "lside space space space rside"
@@ -20,9 +20,8 @@ body{
 .GridContainer {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 70px 0px 115px 610px;
+    grid-template-rows: 30px 100px 115px 610px;
     grid-template-areas: 
-        "header header header header"
         "lside space space rside"
         "lside menu1 menu1 rside"
         "lside main1 main2 rside"
@@ -35,9 +34,21 @@ body{
     grid-template-columns: auto 50% auto;
     grid-template-rows: 11% auto auto;
     grid-template-areas: 
+        "header header header"
+        "lside space rside"
+        "lside main1 rside";
+}
+@media all and (max-width: 1000px){
+.GridContainer2 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto 50% auto;
+    grid-template-rows: 11% auto auto;
+    grid-template-areas: 
         "lside header rside"
         "lside space rside"
         "lside main1 rside";
+}
 }
 .GridItemA{
     grid-area: header;
@@ -147,6 +158,7 @@ body{
 .LinkSize{
     font-size: 1.5em;
     text-align: left;
+    padding-top: 5px;
 }
 }
 .VideoAlign{
