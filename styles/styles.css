@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    margin: 0;
     background-image: url(../bilder/PictureofmycharacterDruidCropped3.jpg)
 }
 .GridContainer {
@@ -19,13 +20,12 @@ body{
 @media all and (max-width: 1000px){
 .GridContainer {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 30px 100px 115px 610px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30px 100px  minmax(75px, auto);
     grid-template-areas: 
-        "lside space space rside"
-        "lside menu1 menu1 rside"
-        "lside main1 main2 rside"
-        "lside main1 main2 rside";
+        "space space"
+        "menu1 menu1"
+        "main1 main2";
 }
 }
 .GridContainer2 {
@@ -42,12 +42,12 @@ body{
 .GridContainer2 {
     display: grid;
     width: 100%;
-    grid-template-columns: auto 50% auto;
+    grid-template-columns: auto;
     grid-template-rows: 11% auto auto;
     grid-template-areas: 
-        "lside header rside"
-        "lside space rside"
-        "lside main1 rside";
+        "header"
+        "space"
+        "main1";
 }
 }
 .GridItemA{
@@ -69,28 +69,25 @@ body{
     grid-area: main3;
     background-color:dimgray;
 }
-.GridItemE{
-    grid-area: main4;
-    background-color:dimgray;
-}
 .GridMenu{
     grid-area: menu1;
     background-color: dimgray;
     font-size: 1.5em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-flow: nowrap;
 }
 @media all and (max-width: 1000px) {
     .GridMenu{
     grid-area: menu1;
     background-color: dimgray;
     font-size: 1.5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+
 }
+}
+.GridMenu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: nowrap;
+    list-style-type: none;
 }
 .CenterGridA {
     text-align: center;
@@ -104,9 +101,6 @@ body{
 .GridSpace{
     grid-area: space;
     background-color: dimgray;
-}
-.Text1{
-    font-size: 0.7em;
 }
 .Text2{
     font-size: 1em;
@@ -139,17 +133,11 @@ body{
 }
 .CenterText{
     text-align: center;
+    width: 100%;
 }
-.Flexer{
-    display: flex;
-    flex-direction: row;
-}
-.flexItem{
-    flex-grow: 1;
-}
+
 .LinkSize{
-    font-size: 1em;
-    text-align: left;
+    font-size: 1.4em;
 }
 .LinkSize2{
     font-size: 1em;
@@ -205,9 +193,13 @@ body{
     height: 80vh;
 }
 }
+article li{
+    text-align: left;
+}
 a{
     color:black;
     text-decoration: none;
+    width: 100%;
     
 }
 a:hover{
